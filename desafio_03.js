@@ -1,15 +1,6 @@
 // Instruções para entrega
 // # 3️⃣ Escrevendo as classes de um Jogo
 
-// **O Que deve ser utilizado**
-
-// - Variáveis
-// - Operadores
-// - Laços de repetição
-// - Estruturas de decisões
-// - Funções
-// - Classes e Objetos
-
 // ## Objetivo:
 
 // Crie uma classe generica que represente um herói de uma aventura e que possua as seguintes propriedades:
@@ -36,5 +27,44 @@
 // - "o {tipo} atacou usando {ataque}"
 //   ex: mago atacou usando magia
 //   guerreiro atacou usando espada
- 
-console.log("oi")
+// Definindo a classe Heroi
+
+// Definindo a classe Heroi
+
+
+// Definindo a classe Heroi
+class Heroi {
+    constructor(nome, idade, tipo) {
+        this.nome = nome
+        this.idade = idade
+        this.tipo = tipo
+    }
+
+    // Método para atacar
+    atacar() {
+        let ataque
+        if (this.tipo === 'mago') {
+            ataque = 'magia'
+        } else if (this.tipo === 'guerreiro') {
+            ataque = 'espada'
+        } else if (this.tipo === 'monge') {
+            ataque = 'artes marciais'
+        } else if (this.tipo === 'ninja') {
+            ataque = 'shuriken'
+        } else {
+            ataque = 'um ataque desconhecido'
+        }
+        console.log(`O ${this.tipo} atacou usando ${ataque}`)
+    }
+}
+
+// Exemplo de uso da classe Heroi
+const mago = new Heroi('Merlin', 50, 'mago')
+const guerreiro = new Heroi('Arthur', 35, 'guerreiro')
+const monge = new Heroi('Li', 40, 'monge')
+const ninja = new Heroi('Hanzo', 30, 'ninja')
+
+mago.atacar()
+guerreiro.atacar()
+monge.atacar()
+ninja.atacar()
