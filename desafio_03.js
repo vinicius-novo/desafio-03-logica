@@ -54,15 +54,15 @@ class Heroi {
         } else {
             ataque = 'um ataque desconhecido'
         }
-        console.log(`O ${this.tipo} atacou usando ${ataque}`)
+        console.log(`O herói ${this.nome}(Idade = ${this.idade}), classificado como ${this.tipo} atacou usando ${ataque}`)
     }
 }
 
 // Exemplo de uso da classe Heroi
 const mago = new Heroi('Merlin', 50, 'mago')
-const guerreiro = new Heroi('Arthur', 35, 'guerreiro')
-const monge = new Heroi('Li', 40, 'monge')
-const ninja = new Heroi('Hanzo', 30, 'ninja')
+const guerreiro = new Heroi('José', 35, 'guerreiro')
+const monge = new Heroi('Jack', 40, 'monge')
+const ninja = new Heroi('João', 30, 'ninja')
 
 mago.atacar()
 guerreiro.atacar()
