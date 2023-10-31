@@ -27,9 +27,6 @@
 // - "o {tipo} atacou usando {ataque}"
 //   ex: mago atacou usando magia
 //   guerreiro atacou usando espada
-// Definindo a classe Heroi
-
-// Definindo a classe Heroi
 
 
 // Definindo a classe Heroi
@@ -58,11 +55,11 @@ class Heroi {
     }
 }
 
-// Exemplo de uso da classe Heroi
-const mago = new Heroi('Merlin', 50, 'mago')
-const guerreiro = new Heroi('José', 35, 'guerreiro')
-const monge = new Heroi('Jack', 40, 'monge')
-const ninja = new Heroi('João', 30, 'ninja')
+// Uso da classe Heroi
+let mago = new Heroi('Merlin', 50, 'mago')
+let guerreiro = new Heroi('José', 35, 'guerreiro')
+let monge = new Heroi('Jack', 40, 'monge')
+let ninja = new Heroi('João', 30, 'ninja')
 
 mago.atacar()
 guerreiro.atacar()
